@@ -25,7 +25,27 @@ public class Inventario {
         System.out.println("5️⃣  Presiona 5 para SALIR ❌");
 
         while(menuOption!=5){
-            System.out.println("oe");
+
+          try {
+
+              if (menuOption==1) {
+                  System.out.println("registrando un producto");
+              }
+              else if (menuOption==2) {
+                  System.out.println("registrando el inventario");
+              }
+              else if (menuOption==3) {
+                  System.out.println("modificando un producto");
+              }
+              else if (menuOption==4) {
+                  System.out.println("eliminado un producto del inventario");
+              }
+              else if (menuOption==5) {
+                  System.out.println("Gracias por utilizar nuestra app");
+              }
+              System.out.println("ahora digita otra opcion: ");
+              menuOption=keyEntry.nextInt();
+          }catch ()
         }
 
         //PROCESO 2
